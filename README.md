@@ -1,3 +1,9 @@
+**The Opencog and ScoringRule Interface (API)**
+
+The following functions are the beginning of an interfact that implements a new type of Logical Prediction Market, which is a generalization of a combinatorial prediction market, built on opencog and PLN (Probabilistic Logic Networks). 
+
+
+ gcr.io/collectiwise/flask-oc:latest
 
     Getting Users 
     curl localhost:5000/users
@@ -18,10 +24,10 @@
     curl -d "USER=user&CONCEPT1=someconcept&PREDICATE=somepredicate&CONTEXT=somecontext&WEIGHT=weightno" localhost:5000/createAttr,
 
     Change Weight Attributes:
-    curl -d "USER=user&CONCEPT=someconcept&PREDICATE=somepredicate&CONTEXT=somecontext&WEIGHT=weightno" localhost:5000/changeWAttr/<int:user_id>,
+    curl -d "USER=user&CONCEPT=someconcept&PREDICATE=somepredicate&CONTEXT=somecontext&WEIGHT=weightno" localhost:5000/changeWAttr/<str:user_id>,
 
     Change Weight Relations:
-    curl -d "USER=user&CONCEPT1=someconcept&CONCEPT2=someconcept2&RELATION=somerelation&WEIGHT=weightno" localhost:5000/changeWRel/<int:user_id>,
+    curl -d "USER=user&CONCEPT1=someconcept&CONCEPT2=someconcept2&RELATION=somerelation&WEIGHT=weightno" localhost:5000/changeWRel/<str:user_id>,
 
     Get A Statement Maker:
     curl -G -d "STATEMENT=statement" localhost:5000/statementMaker,
