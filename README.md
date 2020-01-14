@@ -28,15 +28,3 @@ The following functions are the beginning of an interface that implements a new 
 
     Change Weight Relations:
     curl -d "USER=user&CONCEPT1=someconcept&CONCEPT2=someconcept2&RELATION=somerelation&WEIGHT=weightno" localhost:5000/changeWRel/<str:user_id>,
-
-    Get A Statement Maker:
-    curl -G -d "STATEMENT=statement" localhost:5000/statementMaker,
-
-    Get A Statement User:
-    curl -G -d "STATEMENT=statement" localhost:5000/statementUsers,
-
-    Get A Weight:
-    curl -G -d "STATEMENT=statement" localhost:5000/getWeight,
-
-    LookUp Points:
-    curl -G -d "STATEMENT=statement&NEWWEIGHT=newweight" localhost:5000/lookupPoints,
