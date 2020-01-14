@@ -1,6 +1,6 @@
 **The Opencog and ScoringRule Interface (API)**
 
-The following functions are the beginning of an interfact that implements a new type of Logical Prediction Market, which is a generalization of a combinatorial prediction market, built on opencog and PLN (Probabilistic Logic Networks). 
+The following functions are the beginning of an interface that implements a new type of Logical Prediction Market, which is a generalization of a combinatorial prediction market, built on opencog and PLN (Probabilistic Logic Networks). 
 
 
  gcr.io/collectiwise/flask-oc:latest
